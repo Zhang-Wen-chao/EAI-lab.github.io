@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>Multi-column CNN and its Applications for Crowd Counting and Face Alignment</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="">Yanyu Xu</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Shenghua Gao</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Yingying Zhang</a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Yi Ma</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">Submitted to TPAMI (under review)</h2>
+                </center>
+                <!-- <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center> -->
+                <center>
+                    <img src="../img/project/tpami2018_xuyy2.png" width="1000">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                        <p>This paper presents a simple but effective Multi-column Convolutional Neural Networks
+                            (MCNNs), which
+                            increases the width of the deep neural networks for feature extraction. We show that such
+                            MCNNs
+                            is closely related to some famous Convolutional Neural Networks (CNNs) architectures,
+                            including
+                            GoogLeNet, ResNet, DensNet, and ResNext. Then we apply our MCNNs to crowd counting and face
+                            alignment.
+                            We use CNNs with different sizes of kernels in different columns for feature extraction in
+                            these
+                            two tasks, which are psychology plausible because of the nature of these two tasks.
+                            Specifically,
+                            for crowd counting, we leverage MCNNs for density map regression, which helps the detection
+                            of
+                            heads with different sizes caused by perspective in an arbitrary image. For face alignment,
+                            we
+                            use face MCNNs to simulate the behavior of human in ground-truth annotation procedure where
+                            different
+                            facial key points prefer different sizes of local receptive fields, and even the same
+                            facial
+                            key point may prefer different sizes of local receptive fields in different images. Since
+                            exiting
+                            crowd counting datasets do not adequately cover all the challenging situations considered
+                            in
+                            our work, we have collected and labelled a large new dataset that includes 1198 images with
+                            about
+                            330,000 heads annotated. Extensive experiments validate the effectiveness of MCNNs for both
+                            crowd
+                            counting and face alignment.
+                        </p>
+                    </div>
+
+
+                    <!-- <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@INPROCEEDINGS{xu2018gaze, 
+        author={Yanyu Xu and Yanbing Dong and Junru Wu and Zhengzhong Sun and Zhiru Shi and Jingyi Yu  and Shenghua Gao}, 
+        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Gaze Prediction in Dynamic 360 Immersive Videos}, 
+        year={2018} 
+}</pre> -->
+                </p>
+            </div>
+            <!-- disqus -->
+            <br>
+            <hr />
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://shanghaitechcvdl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+</body>
+
+</html>

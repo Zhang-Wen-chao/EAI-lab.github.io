@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>A Revisit of Sparse Coding Based Anomaly Detection in Stacked RNN Framework</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="">Weixin Luo
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Wen Liu
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Shenghua Gao</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">In ICCV 2017</h2>
+                </center>
+                <!-- <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center> -->
+                <center>
+                    <img src="../img/project/iccv2017_luowx1.png" width="800">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                        <p>Motivated by the capability of sparse coding based anomaly detection, we propose a
+                            Temporally-coherent
+                            Sparse Coding (TSC) where we enforce similar neighbouring frames be encoded with similar
+                            reconstruction
+                            coefficients. Then we map the TSC with a special type of stacked Recurrent Neural Network
+                            (sRNN).
+                            By taking advantage of sRNN in learning all parameters simultaneously, the nontrivial
+                            hyper-parameter
+                            selection to TSC can be avoided, meanwhile with a shallow sRNN, the reconstruction
+                            coefficients
+                            can be inferred within a forward pass, which reduces the computational cost for learning
+                            sparse
+                            coefficients. The contributions of this paper are two-fold: i) We propose a TSC, which can
+                            be
+                            mapped to a sRNN which facilitates the parameter optimization and accelerates the anomaly
+                            prediction.
+                            ii) We build a very large dataset which is even larger than the summation of all existing
+                            dataset
+                            for anomaly detection in terms of both the volume of data and the diversity of scenes.
+                            Extensive
+                            experiments on both a toy dataset and real datasets demonstrate that our TSC based and sRNN
+                            based
+                            method consistently outperform existing methods, which validates the effectiveness of our
+                            method.
+                        </p>
+                    </div>
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@article{luo2017revisit,
+    title={A revisit of sparse coding based anomaly detection in stacked rnn framework},
+    author={Luo, Weixin and Liu, Wen and Gao, Shenghua},
+    journal={ICCV, Oct},
+    volume={1},
+    number={2},
+    pages={3},
+    year={2017}
+}</pre>
+                </p>
+            </div>
+            <!-- disqus -->
+            <br>
+            <hr />
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://shanghaitechcvdl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+</body>
+
+</html>

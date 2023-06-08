@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="/css/offcanvas.css" rel="stylesheet">
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet'
+        type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+  <div class="navigation"></div>
+  <div class="news top-container">
+      <div class="container-fluid">
+          <div class="jumbotron">
+              <h3>DancingPose: A Simple Model for Generating Dancing Pose Sequence from Music
+              </h3>
+              <p iclass="authors">
+                  <a href="">Yanyu Xu</a>,
+                  <a href="">Zhixin Piao</a>,
+                  <a href="">Peiyao Wang</a>,
+                  <a href="">Jiashi Feng</a>,
+                  <a href="">Shenghua Gao</a>
+              </p>
+
+              <p>
+                  <a class="btn btn-primary" href="" target="_blank">Code</a>
+                  <a class="btn btn-primary" href="" target="_blank">Paper</a>
+                  <a class="btn btn-primary" href="/project_img/dancingpose/DancingPose_supple.pdf" target="_blank">Supplemental Material</a>
+              </p>
+          </div>
+        
+          <div class="section">
+            <h3>Abstract</h3>
+            In this work, we address an interesting problem, dancing pose sequence generation according to input music and initial dancing poses.
+            The biggest challenges are how to generate high-quality dancing poses with dance style consistency and beat matching. 
+           To achieve this, we develop a simple model, named DancingPose, to exploit the correlations between the initial dancing 
+           poses and music audio, containing carefully designed Motion Encoder Module, Beat-guided Pacemaker Module and Audio-guided Attention Module.
+            Specially, Motion Encoder Module uses the initial dancing pose sequences as references to keep dance style consistency. 
+           To impose the beat-matching property, Beat-guided Pacemaker Module only exploits the local correlations between foot 
+           speeds of the initial dancing and their corresponding auditory beats, while Audio-guided Attention Module considers 
+           the global correlations between the whole human parts and auditory features. 
+            To evaluate the prediction quality, we develop a new metric to quantitatively measure the beat matching degree of 
+           the predicted dance sequence.  
+            We have validated the effectiveness of our DancingPose model for predicting harmonic pose sequences with comprehensive 
+           experiments on an existing music \& dance. 
+          </div>
+        
+          <div class="section">
+            <h3>FrameWork Overview</h3>
+            <hr>
+            <center>
+                <img src="/project_img/dancingpose/network.png" width="1000">
+            </center>
+          </div>
+          
+       
+          <div class="section">
+            <h3>Some predicted dancing pose sequences of the music & dance dataset.</h3>
+            <hr>
+            <center>
+                <img src="/project_img/dancingpose/dancing_examples.png" width="1000">
+            </center>
+          </div>
+       
+          <div class="section">
+            <h3>Citation</h3>
+            <hr>
+              If you find this useful, please cite our work. 
+          </div>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/all.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+        $(".footer").load("/common/footer.html");
+        $(".navigation").load("/common/navigation.html");
+    });
+  </script>
+          
+</body>
+
+</html>

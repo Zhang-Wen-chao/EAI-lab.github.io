@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+
+    <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/small_logo.png">
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+    <div class="navigation"></div>
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>Encoding Crowd Interaction with Deep Neural Network for Pedestrian Trajectory Prediction</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="">Yanyu Xu
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Zhixin Piao
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Shenghua Gao</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">In CVPR 2018</h2>
+                </center>
+                <!-- <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center> -->
+                <center>
+                    <img src="../img/project/cvpr2018_xuyy1.png" width="700">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                        <p>Pedestrian trajectory prediction is a challenging task because of the complex nature of
+                            humans. In
+                            this paper, we tackle the problem within a deep learning framework by considering motion
+                            information
+                            of each pedestrian and its interaction with the crowd. Specifically, motivated by the
+                            residual
+                            learning in deep learning, we propose to predict displacement between neighboring frames
+                            for
+                            each pedestrian sequentially. To predict such displacement, we design a crowd interaction
+                            deep
+                            neural network (CIDNN) which considers the different importance of different pedestrians
+                            for
+                            the displacement prediction of a target pedestrian. Specifically, we use an LSTM to model
+                            motion
+                            information for all pedestrians and use a multi-layer perceptron to map the location of
+                            each
+                            pedestrian to a high dimensional feature space where the inner product between features is
+                            used
+                            as a measurement for the spatial affinity between two pedestrians. Then we weight the
+                            motion
+                            features of all pedestrians based on their spatial affinity to the target pedestrian for
+                            location
+                            displacement prediction. Extensive experiments on publicly available datasets validate the
+                            effectiveness
+                            of our method for trajectory prediction.
+                        </p>
+                    </div>
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@INPROCEEDINGS{xu2018cidnn, 
+        author={Yanyu Xu and Zhixin Piao and Shenghua Gao}, 
+        booktitle={2018 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 
+        title={Encoding Crowd Interaction with Deep Neural Network for Pedestrian Trajectory Prediction}, 
+        year={2018} 
+}</pre>
+                </p>
+            </div>
+            <!-- disqus -->
+            <br>
+            <hr />
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://shanghaitechcvdl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </div>
+    </div>
+
+
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+</body>
+
+</html>

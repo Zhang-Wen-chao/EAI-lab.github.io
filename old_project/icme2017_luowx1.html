@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="index, follow">
+    
+        <title>Shanghaitech Vision and Intelligent Perception(SVIP) LAB</title>
+        <meta name="description" content="">
+        <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+    
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/css/main.css" rel='stylesheet' type='text/css'>
+    
+    
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/img/small_logo.png">
+    
+</head>
+
+
+<body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
+        <div class="navigation"></div>
+
+
+
+    <div class="news top-container">
+        <div class="container-fluid">
+            <div id="primarycontent">
+                <center>
+                    <h2>Remembering History with Convolutional LSTM for Anomaly Detection</h2>
+                </center>
+                <center>
+                    <h3>
+                        <a href="">Weixin Luo
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Wen Liu
+                            <sup>*</sup>
+                        </a>&nbsp;&nbsp;&nbsp;
+                        <a href="">Shenghua Gao</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3>
+                        <a href="http://www.shanghaitech.edu.cn" target="_blank">ShanghaiTech University</a>
+                    </h3>
+                </center>
+                <center>
+                    <h3 style="color: #000000">In ICME 2017</h2>
+                </center>
+                <!-- <center>
+                    <h3>
+                        <a href="https://arxiv.org/abs/1712.09867" target="_blank" style="color: #990000">[Paper]</a>
+                        <a href="https://github.com/StevenLiuWen/ano_pred_cvpr2018" target="_blank" style="color: #990000">[Code (Tensorflow)]</a>
+                    </h3>
+                </center> -->
+                <center>
+                    <img src="../img/project/icme2017_luowx1.png" width="800">
+                </center>
+                <p></p>
+
+
+                <p>
+                    <h2>Abstract</h2>
+
+                    <div style="font-size:14px">
+                        <p>This paper tackles anomaly detection in videos, which is an extremely challenging task because anomaly
+                            is unbounded. We approach this task by leveraging a Convolutional Neural Network (CNN or ConvNet)
+                            for appearance encoding for each frame, and leveraging a Convolutional Long Short Term Memory
+                            (ConvLSTM) for memorizing all past frames which corresponds to the motion information. Then we
+                            integrate ConvNet and ConvLSTM with Auto-Encoder, which is referred to as ConvLSTM-AE, to learn
+                            the regularity of appearance and motion for the ordinary moments. Compared with 3D Convolutional
+                            Auto-Encoder based anomaly detection, our main contribution lies in that we propose a ConvLSTMAE
+                            framework which better encodes the change of appearance and motion for normal events, respectively.
+                            To evaluate our method, we first conduct experiments on a synthesized Moving-MNIST dataset under
+                            controlled settings, and results show that our method can easily identify the change of appearance
+                            and motion. Extensive experiments on real anomaly datasets further validate the effectiveness
+                            of our method for anomaly detection.
+                        </p>
+                    </div>
+
+                    <h2>Citation</h2>
+                    If you find this useful, please cite our work as follows:
+
+                    <pre>
+@inproceedings{luo2017remembering,
+    title={Remembering history with convolutional lstm for anomaly detection},
+    author={Luo, Weixin and Liu, Wen and Gao, Shenghua},
+    booktitle={Multimedia and Expo (ICME), 2017 IEEE International Conference on},
+    pages={439--444},
+    year={2017},
+    organization={IEEE}
+    }</pre>
+                </p>
+            </div>
+            <!-- disqus -->
+            <br>
+            <hr/>
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://shanghaitechcvdl.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the
+                <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </div>
+    </div>
+
+
+    <div class="footer"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/all.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".footer").load("/common/footer.html");
+            $(".navigation").load("/common/navigation.html");
+        });
+    </script>
+</body>
+
+</html>
